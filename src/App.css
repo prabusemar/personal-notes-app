@@ -92,7 +92,7 @@ button.delete {
 }
 
 button.add {
-  background-color: #42d642; 
+  background-color: #07aa07; 
 }
 
 button.archive {
@@ -100,5 +100,45 @@ button.archive {
 }
 
 button.delete, button.archive {
-  margin-bottom: 10px; /* Atur sesuai kebutuhan Anda */
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .note-card {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input, textarea, button {
+    font-size: 16px;
+  }
+
+  .container-tambah {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .note-card {
+    width: calc(50% - 20px);
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input, textarea, button {
+    font-size: 18px;
+  }
+
+  .container-tambah {
+    max-width: 80%;
+    padding: 40px;
+  }
 }
