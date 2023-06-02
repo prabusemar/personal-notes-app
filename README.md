@@ -16,11 +16,11 @@ Ikuti langkah-langkah berikut untuk menginstall aplikasi ini:
 
 1. Clone repositori ini dengan menjalankan perintah berikut di terminal Anda:
 ```
-git clone https://github.com/user/repo.git
+git clone https://github.com/prabusemar/personal-notes-app.git
 ```
 2. Masuk ke direktori proyek dengan:
 ```
-cd nama-folder-proyek
+cd personal-notes-app
 ```
 3. Install semua dependensi yang dibutuhkan dengan menjalankan perintah:
 ```
