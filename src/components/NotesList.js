@@ -7,7 +7,9 @@ function NotesList({ notes, setNotes }) {
     const [searchTerm, setSearchTerm] = useState('');
 
     const deleteNote = (id) => {
-        setNotes(notes.filter((note) => note.id !== id));
+        if (window.confirm('Anda yakin ingin menghapus catatan ini?')) {
+            setNotes(notes.filter((note) => note.id !== id));
+        }
     };
 
     const archiveNote = (id) => {

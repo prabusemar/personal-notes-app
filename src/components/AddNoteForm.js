@@ -8,6 +8,12 @@ function AddNoteForm({ notes, setNotes }) {
     const addNote = (e) => {
         e.preventDefault();
 
+        // Jika judul atau body kosong, maka kembalikan fungsi dan jangan buat catatan baru
+        if (title.trim() === "" || body.trim() === "") {
+            alert("Judul dan isi catatan tidak boleh kosong");
+            return;
+        }
+
         const newNote = {
             id: +new Date(),
             title: title,
